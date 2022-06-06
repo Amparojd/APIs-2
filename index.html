@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Laboratorio API's de HTML5</title>
+  </head>
+  <body>
+    <h1>Ejercicio APIs</h1>
+    <div class="container">
+      <div>
+        <div>
+          <form action="../../form-result.php" method="post" enctype="multipart/form-data" target="_blank">
+            <input type="file" name="archivo" class="button" id="videoFile"  accept=".webm,.mp4,.ogv"/>
+          </form>
+        </div>
+      </div>
+      <figure>
+        <video id="video" controls width="700" accept=".webm,.mp4,.ogv">
+          Formato no admitido por el navegador
+        </video>
+      </figure>
+      <div>
+        <button type ="button"  class="button" onclick="document.getElementById('video').play();">Play</button>
+        <button type ="button" class="button" onclick="document.getElementById('video').pause();">Pause</button>
+        <button type= "button" class= "button" onclick="document.getElementById('video').volume += 0.1;">Subir Volumen</button>
+        <button type="button" class="button" onclick="document.getElementById('video').volume -= 0.1;">Bajar Volumen </button>
+      </div>
+    </div>
+    <script type="text/javascript" src="funcion.js"></script>
+  </body>
+</html>
